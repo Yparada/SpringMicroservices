@@ -12,7 +12,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class ProductServiceImpl  implements ProductService{
+public class ProductServiceImpl implements ProductService{
 
 
     private final ProductRepository productRepository;
@@ -37,25 +37,25 @@ public class ProductServiceImpl  implements ProductService{
 
     @Override
     public Product updateProduct(Product product) {
-        Product productDB = getProduct(product.getId());
-        if (null == productDB){
+        Product productDb = getProduct(product.getId());
+        if(null==productDb){
             return null;
         }
-        productDB.setName(product.getName());
-        productDB.setDescription(product.getDescription());
-        productDB.setCategory(product.getCategory());
-        productDB.setPrice(product.getPrice());
-        return productRepository.save(productDB);
+        productDb.setName(product.getName());
+        productDb.setDescription(product.getDescription());
+        productDb.setCategory(product.getCategory());
+        productDb.setPrice(product.getPrice());
+        return productRepository.save(productDb);
     }
 
     @Override
     public Product deleteProduct(Long id) {
-        Product productDB = getProduct(id);
-        if (null == productDB){
+        Product productDb = getProduct(id);
+        if(null==productDb){
             return null;
         }
-        productDB.setStatus("DELETED");
-        return productRepository.save(productDB);
+        productDb.setStatus("DELETED");
+        return productRepository.save(productDb);
     }
 
     @Override
@@ -65,12 +65,13 @@ public class ProductServiceImpl  implements ProductService{
 
     @Override
     public Product updateStock(Long id, Double quantity) {
-        Product productDB = getProduct(id);
-        if (null == productDB){
+        Product productDb = getProduct(id);
+        if(null==productDb){
             return null;
+            //fff
         }
-        Double stock =  productDB.getStock() + quantity;
-        productDB.setStock(stock);
-        return productRepository.save(productDB);
+        Double stock = productDb.getStock()+quantity;
+        productDb.setStock(stock);
+        return productRepository.save(productDb);
     }
 }

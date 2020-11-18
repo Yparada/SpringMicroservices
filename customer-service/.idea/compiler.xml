@@ -11,6 +11,6 @@
         <module name="customer-service.main" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.6" />
+    <bytecodeTargetLevel target="11" />
   </component>
 </project>

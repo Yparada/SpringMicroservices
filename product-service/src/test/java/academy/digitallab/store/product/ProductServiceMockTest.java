@@ -11,6 +11,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Optional;
@@ -26,31 +27,27 @@ public class ProductServiceMockTest {
     @BeforeEach
     public void setup(){
         MockitoAnnotations.initMocks(this);
-        productService =  new ProductServiceImpl( productRepository);
-        Product computer =  Product.builder()
+        productService = new ProductServiceImpl(productRepository);
+        Product computer = Product.builder()
                 .id(1L)
                 .name("computer")
                 .category(Category.builder().id(1L).build())
                 .price(Double.parseDouble("12.5"))
                 .stock(Double.parseDouble("5"))
                 .build();
-
         Mockito.when(productRepository.findById(1L))
                 .thenReturn(Optional.of(computer));
         Mockito.when(productRepository.save(computer)).thenReturn(computer);
-
     }
 
     @Test
-   public void whenValidGetID_ThenReturnProduct(){
+    public void whenValidGetId_ThenReturnProduct(){
         Product found = productService.getProduct(1L);
-       Assertions.assertThat(found.getName()).isEqualTo("computer");
+        Assertions.assertThat(found.getName()).isEqualTo("computer");
+    }
 
-   }
-
-   @Test
-   public void whenValidUpdateStock_ThenReturnNewStock(){
-        Product newStock = productService.updateStock(1L,Double.parseDouble("8"));
+    public void whenValidUpdateStock_ThenReturnNewStock(){
+        Product newStock = productService.updateStock(1L, Double.parseDouble("8"));
         Assertions.assertThat(newStock.getStock()).isEqualTo(13);
-   }
+    }
 }
