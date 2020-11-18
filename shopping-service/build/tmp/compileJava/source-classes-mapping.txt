@@ -9,11 +9,11 @@ academy/digitallab/store/shopping/controller/ErrorMessage.java
  academy.digitallab.store.shopping.controller.ErrorMessage$ErrorMessageBuilder
 academy/digitallab/store/shopping/service/InvoiceServiceImpl.java
  academy.digitallab.store.shopping.service.InvoiceServiceImpl
-academy/digitallab/store/shopping/controller/InvoiceRest.java
- academy.digitallab.store.shopping.controller.InvoiceRest
+academy/digitallab/store/shopping/entity/InvoiceItem.java
+ academy.digitallab.store.shopping.entity.InvoiceItem
 academy/digitallab/store/shopping/repository/InvoiceItemsRepository.java
  academy.digitallab.store.shopping.repository.InvoiceItemsRepository
 academy/digitallab/store/shopping/ShoppingServiceApplication.java
  academy.digitallab.store.shopping.ShoppingServiceApplication
-academy/digitallab/store/shopping/entity/InvoiceItem.java
- academy.digitallab.store.shopping.entity.InvoiceItem
+academy/digitallab/store/shopping/controller/InvoiceRest.java
+ academy.digitallab.store.shopping.controller.InvoiceRest
