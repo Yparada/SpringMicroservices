@@ -1,0 +1,2 @@
+academy/digitallab/store/customer/CustomerServiceApplicationTests.java
+ academy.digitallab.store.customer.CustomerServiceApplicationTests

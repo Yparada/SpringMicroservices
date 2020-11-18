@@ -1,0 +1,17 @@
+academy/digitallab/store/customer/service/CustomerService.java
+ academy.digitallab.store.customer.service.CustomerService
+academy/digitallab/store/customer/controller/ErrorMessage.java
+ academy.digitallab.store.customer.controller.ErrorMessage
+ academy.digitallab.store.customer.controller.ErrorMessage$ErrorMessageBuilder
+academy/digitallab/store/customer/entity/Region.java
+ academy.digitallab.store.customer.entity.Region
+academy/digitallab/store/customer/controller/CustomerController.java
+ academy.digitallab.store.customer.controller.CustomerController
+academy/digitallab/store/customer/entity/Customer.java
+ academy.digitallab.store.customer.entity.Customer
+academy/digitallab/store/customer/repository/CustomerRepository.java
+ academy.digitallab.store.customer.repository.CustomerRepository
+academy/digitallab/store/customer/CustomerServiceApplication.java
+ academy.digitallab.store.customer.CustomerServiceApplication
+academy/digitallab/store/customer/service/CustomerServiceImpl.java
+ academy.digitallab.store.customer.service.CustomerServiceImpl
