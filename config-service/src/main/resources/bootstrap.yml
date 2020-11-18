@@ -1,0 +1,20 @@
+server:
+  port: 8081
+  error:
+    include-message: always
+    include-binding-error: always
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Zohris/SpringMicroservices.git
+          searchPaths: config-data
+          username: ${GIT_USER}
+          password: ${GIT_PASSWORD}
+          default-label: "master"
+  security:
+    user:
+      name: root
+      password: s3cr3t
