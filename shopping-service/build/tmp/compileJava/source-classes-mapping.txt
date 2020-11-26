@@ -3,15 +3,15 @@ academy/digitallab/store/shopping/model/Customer.java
  academy.digitallab.store.shopping.model.Customer$CustomerBuilder
 academy/digitallab/store/shopping/service/InvoiceService.java
  academy.digitallab.store.shopping.service.InvoiceService
-academy/digitallab/store/shopping/ShoppingServiceApplication.java
- academy.digitallab.store.shopping.ShoppingServiceApplication
+academy/digitallab/store/shopping/client/CustomerClient.java
+ academy.digitallab.store.shopping.client.CustomerClient
 academy/digitallab/store/shopping/model/Product.java
  academy.digitallab.store.shopping.model.Product
 academy/digitallab/store/shopping/controller/ErrorMessage.java
  academy.digitallab.store.shopping.controller.ErrorMessage
  academy.digitallab.store.shopping.controller.ErrorMessage$ErrorMessageBuilder
-academy/digitallab/store/shopping/repository/InvoiceItemsRepository.java
- academy.digitallab.store.shopping.repository.InvoiceItemsRepository
+academy/digitallab/store/shopping/client/CustomerHystrixFallbackFactory.java
+ academy.digitallab.store.shopping.client.CustomerHystrixFallbackFactory
 academy/digitallab/store/shopping/model/Region.java
  academy.digitallab.store.shopping.model.Region
 academy/digitallab/store/shopping/model/Category.java
@@ -24,11 +24,11 @@ academy/digitallab/store/shopping/repository/InvoiceRepository.java
  academy.digitallab.store.shopping.repository.InvoiceRepository
 academy/digitallab/store/shopping/client/ProductClient.java
  academy.digitallab.store.shopping.client.ProductClient
-academy/digitallab/store/shopping/entity/InvoiceItem.java
- academy.digitallab.store.shopping.entity.InvoiceItem
-academy/digitallab/store/shopping/client/CustomerClient.java
- academy.digitallab.store.shopping.client.CustomerClient
-academy/digitallab/store/shopping/client/CustomerHystrixFallbackFactory.java
- academy.digitallab.store.shopping.client.CustomerHystrixFallbackFactory
 academy/digitallab/store/shopping/service/InvoiceServiceImpl.java
  academy.digitallab.store.shopping.service.InvoiceServiceImpl
+academy/digitallab/store/shopping/entity/InvoiceItem.java
+ academy.digitallab.store.shopping.entity.InvoiceItem
+academy/digitallab/store/shopping/repository/InvoiceItemsRepository.java
+ academy.digitallab.store.shopping.repository.InvoiceItemsRepository
+academy/digitallab/store/shopping/ShoppingServiceApplication.java
+ academy.digitallab.store.shopping.ShoppingServiceApplication
